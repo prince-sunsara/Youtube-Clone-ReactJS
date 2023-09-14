@@ -1,0 +1,4 @@
+for youtube clone 
+> react 18
+> tailwind css
+> rapid api to fetch yt videos
