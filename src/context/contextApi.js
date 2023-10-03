@@ -6,7 +6,7 @@ export const Context = createContext();
 export const ContenxtApi = (props) => {
     const [loading, setLoading] = useState(false);
     const [searchResult, setSearchResult] = useState(false)
-    const [selectCategories, setSelectCategories] = useState("despacito")
+    const [selectCategories, setSelectCategories] = useState("New")
     const [mobileMenu, setMobileMenu] = useState(false)
 
     useEffect(()=>{
@@ -15,9 +15,9 @@ export const ContenxtApi = (props) => {
 
     const fetchSelectedCategoryData = (query) => {
       setLoading(true)
-      fetchDataFromApi(`search/?q=${query}`).then((res) => {
-        console.log(res);
-        // setSearchResult(res);
+      fetchDataFromApi(`search/?q=${query}`).then(({contents}) => {
+        console.log(contents);
+        setSearchResult(contents);
         setLoading(false);
       }).catch((err) => console.log(err));
     }
