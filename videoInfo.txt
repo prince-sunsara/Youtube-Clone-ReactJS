@@ -1,0 +1,54 @@
+{
+    "type": "video",
+    "video": {
+        "author": {
+            "avatar": [
+                {
+                    "height": 68,
+                    "url": "https://yt3.ggpht.com/OOT0eq8LoW8V3PMURGYuk0kRSgRGP7EsuGZoODhHBcg1jCB1qkuIAxS-XGnjKX9Q6rf-WKTvkQ=s68-c-k-c0x00ffffff-no-rj",
+                    "width": 68
+                }
+            ],
+            "badges": [
+                {
+                    "text": "Verified",
+                    "type": "VERIFIED_CHANNEL"
+                }
+            ],
+            "canonicalBaseUrl": "/@ABCNews",
+            "channelId": "UCBi2mrWuNuyYy4gbM6fU18Q",
+            "title": "ABC News"
+        },
+        "badges": [
+            "New"
+        ],
+        "descriptionSnippet": "A sweeping new presidential order on artificial intelligence would set national rules on the rapidly growing technology that has big ...",
+        "isLiveNow": false,
+        "lengthSeconds": 85,
+        "movingThumbnails": [
+            {
+                "height": 180,
+                "url": "https://i.ytimg.com/an_webp/dUMrW93Ll3k/mqdefault_6s.webp?du=3000&sqp=CL6HiKoG&rs=AOn4CLBV8g0XIRra1gYnRf_xgaoXYJBBlA",
+                "width": 320
+            }
+        ],
+        "publishedTimeText": "1 day ago",
+        "stats": {
+            "views": 164314
+        },
+        "thumbnails": [
+            {
+                "height": 202,
+                "url": "https://i.ytimg.com/vi/dUMrW93Ll3k/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBX0msA7iiiCE5v-48X5T8JD1Zh9Q",
+                "width": 360
+            },
+            {
+                "height": 404,
+                "url": "https://i.ytimg.com/vi/dUMrW93Ll3k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCoxsU2UTJSVZ-0qGvEzuWFKMojLg",
+                "width": 720
+            }
+        ],
+        "title": "President Joe Biden signs new executive order on AI l GMA",
+        "videoId": "dUMrW93Ll3k"
+    }
+}

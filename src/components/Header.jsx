@@ -27,7 +27,7 @@ const Header = () => {
   // handle searchbox
   const searchQueryHandler = (event) => {
     // ? used for if before q is undefined than does not check other
-    if ((event?.key == "Enter" || event == "searchButton") && searchQuery?.length > 0) {
+    if ((event?.key === "Enter" || event === "searchButton") && searchQuery?.length > 0) {
       navigate(`/searchResult/${searchQuery}`)
     }
   }
@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <div className='sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-white dark:bg-black'>
-    {loading && <Loader />}
+    {loading && <Loader/>}
 
       <div className="flex h-5 items-center">
         {pageName !== "video" && (
@@ -55,7 +55,6 @@ const Header = () => {
           <img className='h-full hidden lg:block' src={ytLogo} alt='Youtube' />
           <img className='h-full md:hidden' src={ytLogoMobile} alt='Youtube' />
         </Link>
-
       </div>
 
       {/* SEARCHBAR BOX  */}
@@ -90,9 +89,8 @@ const Header = () => {
           <div className="flex items-center justify-center ml-2 h-10 w-10 rounded-full hover:bg-[#303030]/[0.6]">
             <FiBell className='text-white text-xl cursor-pointer' />
           </div>
-
           <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4">
-            <img src="https://xsgames.co/randomusers/assets/avatars/female/3.jpg"/>
+            <img src="https://xsgames.co/randomusers/assets/avatars/female/3.jpg" alt='Profile'/>
           </div>
         </div>
       </div>

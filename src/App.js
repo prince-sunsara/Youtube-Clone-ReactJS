@@ -6,13 +6,12 @@ import { ContenxtApi } from './context/contextApi'
 import Header from './components/Header'
 import Feed from './components/Feed'
 import SearchResult from './components/SearchResult'
-import VedioDetails from './components/VedioDetails'
+import VideoDetails from './components/VideoDetails'
 
-// import LeftNav from './components/LeftNav'
 // import LeftNavMenuItem from './components/LeftNavMenuItem'
-// import SearchResultVedioCard from './components/SearchResultVedioCard'
-// import SuggestionVedioCard from './components/SuggestionVedioCard'
-// import VedioCard from './components/VedioCard'
+// import SearchResultVideoCard from './components/SearchResultVideoCard'
+// import SuggestionVideoCard from './components/SuggestionVideoCard'
+// import VideoCard from './components/VideoCard'
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Feed />} />
             <Route exact path='/searchResult/:searchQuery' element={<SearchResult />} />
-            <Route exact path='/vedio/:id' element={<VedioDetails />} />
+            <Route exact path='/video/:id' element={<VideoDetails />} />
           </Routes>
         </div>
       </Router>

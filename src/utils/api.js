@@ -1,7 +1,8 @@
-// const axios = require('axios');
 import axios from "axios";
 
 const BASE_URL = "https://youtube138.p.rapidapi.com";
+// const apikey = process.env.REACT_APP_YOUTUBE_API_KEY
+// console.log(apikey);
 
 const options = {
   params: {

@@ -5,7 +5,7 @@ export const Context = createContext();
 
 export const ContenxtApi = (props) => {
     const [loading, setLoading] = useState(false);
-    const [searchResult, setSearchResult] = useState(false)
+    const [searchResults, setSearchResults] = useState(false)
     const [selectCategories, setSelectCategories] = useState("New")
     const [mobileMenu, setMobileMenu] = useState(false)
 
@@ -15,9 +15,9 @@ export const ContenxtApi = (props) => {
 
     const fetchSelectedCategoryData = (query) => {
       setLoading(true)
-      fetchDataFromApi(`search/?q=${query}`).then(({contents}) => {
-        console.log(contents);
-        setSearchResult(contents);
+      fetchDataFromApi(`search/?q=${query}`).then(({ contents }) => {
+        // console.log(contents);
+        setSearchResults(contents);
         setLoading(false);
       }).catch((err) => console.log(err));
     }
@@ -26,8 +26,8 @@ export const ContenxtApi = (props) => {
     <Context.Provider value={{
         loading,
         setLoading,
-        searchResult,
-        setSearchResult,
+        searchResults,
+        setSearchResults,
         selectCategories,
         setSelectCategories,
         mobileMenu,
