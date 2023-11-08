@@ -23,7 +23,7 @@ const VedioDetails = () => {
   const fetchVideoDetails = () => {
     setLoading(true);
     fetchDataFromApi(`video/details/?id=${id}`).then((res) => {
-      console.log(res);
+      // console.log(res);
       setVideo(res);
       setLoading(false);
     });
@@ -32,8 +32,8 @@ const VedioDetails = () => {
   const fetchRelatedVideo = () => {
     setLoading(true);
     fetchDataFromApi(`video/related-contents/?id=${id}`).then((res) => {
-      console.log(res);
-      setVideo(res);
+      // console.log(res);
+      setRelatedVideos(res);
       setLoading(false);
     });
   };
@@ -108,7 +108,20 @@ const VedioDetails = () => {
 
         </div>
 
-        
+        {/* suggestion video div  */}
+        <div className="flex flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl-w-[400px]">
+          {
+            relatedVideos?.contents?.map((item, index) => {
+              if(item?.type !== 'video') return false;
+              return (
+                <SuggestionVideoCard
+                  key={index}
+                  video={item?.video}
+                />
+              );
+            })
+          }
+        </div>
       </div>
     </div>
   );
