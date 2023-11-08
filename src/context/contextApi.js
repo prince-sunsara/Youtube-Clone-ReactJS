@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { fetchDataFromApi } from '../utils/api';
+import videos from '../videos';
 
 export const Context = createContext();
 
@@ -15,9 +16,11 @@ export const ContenxtApi = (props) => {
 
     const fetchSelectedCategoryData = (query) => {
       setLoading(true)
-      fetchDataFromApi(`search/?q=${query}`).then(({ contents }) => {
+      // fetchDataFromApi(`search/?q=${query}`).then((videos) => {
+        fetchDataFromApi(`search/?q=${query}`).then(({ contents }) => {
         // console.log(contents);
         setSearchResults(contents);
+        // setSearchResults(videos);
         setLoading(false);
       }).catch((err) => console.log(err));
     }

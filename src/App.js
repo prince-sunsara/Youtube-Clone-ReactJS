@@ -8,10 +8,6 @@ import Feed from './components/Feed'
 import SearchResult from './components/SearchResult'
 import VideoDetails from './components/VideoDetails'
 
-// import LeftNavMenuItem from './components/LeftNavMenuItem'
-// import SearchResultVideoCard from './components/SearchResultVideoCard'
-// import SuggestionVideoCard from './components/SuggestionVideoCard'
-// import VideoCard from './components/VideoCard'
 
 function App() {
   return (
