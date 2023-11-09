@@ -37,7 +37,7 @@ const SearchResultVideoCard = ({ video }) => {
               <div className="flex h-9 w-9 rounded-full overflow-hidden">
                 <img
                   src={video?.author?.avatar[0]?.url}
-                  alt="channel image"
+                  alt="channel icon"
                   className='h-full w-full object-cover'
                 />
               </div>
