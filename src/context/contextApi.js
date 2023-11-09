@@ -1,6 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { fetchDataFromApi } from '../utils/api';
-import videos from '../videos';
 
 export const Context = createContext();
 
